@@ -1,0 +1,106 @@
+
+.header {
+    color: rgb(15, 89, 217);
+}
+
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, main {
+    height: 100%
+}
+
+main {
+    display: flex;
+}
+
+/* 
+div {
+    
+    border: 1px solid black;
+    height: 100%;
+    
+
+} */
+
+.column {
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+.menu {
+    width: 30%;
+    background-color: rgb(245, 245, 245);
+    left: 0;
+    padding: 0px  30px 0px;
+    -webkit-box-shadow: 6px 0px 10px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 0px 10px -4px rgba(0,0,0,0.75);
+    box-shadow: 6px 0px 10px -4px rgba(0,0,0,0.75);
+}
+
+.content{
+    width: 70%;
+    background-color : rgb(247, 246, 246);
+    right: 0;
+    z-index: 0;
+}   
+.menu-header {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.menu-link {
+    margin-top: 1.125em;
+    border: 1px solid black;
+    height: 35px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.menu-link:hover {
+    border: 2px solid purple;
+    color: purple;
+}
+
+.menu-link-active {
+    border: 2px solid green;
+    color: green;
+}
+
+.menu-link-a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-footer {
+    bottom: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
